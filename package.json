@@ -1,0 +1,18 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js --require-module ts-node/register --require ./step-definitions/**/*.ts --format json:./reports/cucumber-report.json --format progress",
+    "report": "npx cucumber-html-reporter --theme bootstrap --jsonFile ./reports/cucumber-report.json --output ./reports/cucumber-report.html"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.47.0",
+    "playwright": "^1.47.0",
+    "cucumber-html-reporter": "^7.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
